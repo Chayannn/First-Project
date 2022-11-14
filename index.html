@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Website</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  body {
+    font-family: "Baloo Bhai 2", cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("img/bg.jpg");
+    background-size: 1880px 1020px;
+  }
+
+  .left {
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+  }
+
+  .left img {
+    width: 80px;
+    padding-left: 10px;
+    filter: invert(100%);
+  }
+
+  .left div {
+    text-align: center;
+  }
+
+  .center {
+    display: block;
+    width: 42%;
+    margin: 20px auto;
+  }
+
+  .right {
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: rgb(155, 130, 130);
+  }
+
+  .btn {
+    margin: 10px 10px;
+    background-color: black;
+    color: white;
+    padding: 6px 22px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Baloo Bhai 2", cursive;
+  }
+
+  .btn :hover {
+    background-color: gray;
+  }
+
+  .container {
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 20px;
+  }
+  .form-group input{
+    text-align: center;
+    display: block;
+    width: 434px;
+    padding: 6px;
+    border: 2px solid black;
+    margin: 3px auto;
+    border-radius: 10px;
+    font-family: "Baloo Bhai 2", cursive;
+
+  }
+</style>
+
+<body>
+  <header class="header">
+    <!-- leftbox for logo -->
+    <div class="left">
+      <img src="img/gym.png" alt="" />
+      <div>Chayan Fitness</div>
+    </div>
+    <!-- centerbox for navigation -->
+    <div class="center">
+      <ul class="navbar">
+        <li><a href="#" class="active">HOME</a></li>
+
+        <li><a href="#">ABOUT US</a></li>
+
+        <li><a href="#">FITNESS CALCULATOR</a></li>
+
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+    <!-- rightbox for buttons -->
+    <div class="right">
+      <button class="btn">Call Us</button>
+      <button class="btn">Text Us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the best gym of Mahishadal Now</h1>
+    <form action="noaction.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Name" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Age" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Gender" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Locality" />
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
